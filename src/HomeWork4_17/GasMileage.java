@@ -4,24 +4,40 @@ package HomeWork4_17;
 import java.util.Scanner;
 
 public class GasMileage {
+    Scanner input = new Scanner(System.in);
 
     private double spentGas;
     private double mile;
 
 
     public GasMileage() {
-        Scanner input = new Scanner(System.in);
-        this.spentGas = input.nextDouble();
-        this.mile = input.nextDouble();
+        setMile(input.nextDouble());
+        setSpentGas(input.nextDouble());
     }
 
-    public double calculateFuelConsumtion() {
-        return mile / spentGas;
+    public double calculateFuelConsumption() {
+        return getMile() / getSpentGas();
+    }
+
+
+    public double getSpentGas() {
+        return spentGas;
+    }
+
+    public void setSpentGas(double spentGas) {
+        this.spentGas = spentGas;
+    }
+
+    public double getMile() {
+        return mile;
+    }
+
+    public void setMile(double mile) {
+        this.mile = mile;
     }
 
     public static void main(String[] args) {
-        GasMileage test=new GasMileage();
-        System.out.println(test.calculateFuelConsumtion());
+        System.out.println(new GasMileage().calculateFuelConsumption());
 
     }
 

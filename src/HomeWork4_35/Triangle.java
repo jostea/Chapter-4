@@ -12,9 +12,9 @@ public class Triangle {
 
 
         if (!(AB == 0 && BC == 0 && CA == 0)) {
-            if ((AB+BC)>CA&&(AB+CA)>BC&&(BC+CA)>AB){
+            if ((AB + BC) > CA && (AB + CA) > BC && (BC + CA) > AB) {
                 System.out.println("Correct size for triangle!");
-            }   else
+            } else
                 System.out.println("Uncorrect size!");
 
 

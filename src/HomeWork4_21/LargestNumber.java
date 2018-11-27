@@ -1,16 +1,13 @@
 package HomeWork4_21;
 
-
 import java.util.Scanner;
 
 public class LargestNumber {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
 
-        int number=0;
+        int number = 0;
         int counter = 0;
-        int largest;
 
 
         int[] array = new int[10];
@@ -20,9 +17,10 @@ public class LargestNumber {
             number = array[i];
         }
 
-        largest = array[0];
+        int largest = array[0];
 
         for (int i = 0; i < array.length; i++) {
+
             if (largest < array[i]) {
                 largest = array[i];
             }
@@ -30,7 +28,7 @@ public class LargestNumber {
         }
 
 
-        System.out.println(number+" "+largest+" "+counter);
+        System.out.println("Last number was: " + number + "\nLargest: " + largest + "\n " + counter);
 
     }
 
